@@ -256,8 +256,6 @@ cd ..
 ver=`../u8g2/tools/release/print_release.sh`
 
 sed -i -e "s/version=.*/version=${ver}/" library.properties
-# sed -i -e 's/"version".*/"version": "${ver}",/' library.properties
-sed -i -e "s/.*\"version\".*/  \"version\": \"${ver}\",/" library.json
 
 sed -i -e "s/Download (.*)/Download (${ver})/" README.md
 

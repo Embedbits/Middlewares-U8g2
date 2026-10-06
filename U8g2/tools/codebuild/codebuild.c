@@ -349,23 +349,6 @@ struct controller controller_list[] =
     }
   },
 
-  {
-    "ch1120", 	 16, 	20, 	"u8g2_ll_hvline_vertical_top_lsb", "u8x8_cad_001", "", COM_4WSPI|COM_3WSPI|COM_6800|COM_8080|COM_8080,
-    "", /* is_generate_u8g2_class= */ 1,
-    {
-      { "128x160" },
-      { NULL }
-    }
-  },
-  {
-    "ch1120", 	 16, 	20, 	"u8g2_ll_hvline_vertical_top_lsb", "u8x8_cad_ssd13xx_i2c", "i2c", COM_I2C,
-    "", /* is_generate_u8g2_class= */ 1,
-    {
-      { "128x160" },
-      { NULL }
-    }
-  },
-  
    {
     "sh1108", 	 20, 	20, 	"u8g2_ll_hvline_vertical_top_lsb", "u8x8_cad_001", "", COM_4WSPI|COM_3WSPI|COM_6800|COM_8080|COM_8080,
     "Not tested", /* is_generate_u8g2_class= */ 1,
@@ -584,7 +567,6 @@ struct controller controller_list[] =
     "", /* is_generate_u8g2_class= */ 1,
     {
       { "120x32" },
-      { "120x28" },
       { NULL }
     }
   },
@@ -593,7 +575,6 @@ struct controller controller_list[] =
     "", /* is_generate_u8g2_class= */ 1,
     {
       { "120x32" },
-      { "120x28" },
       { NULL }
     }
   },  
@@ -1035,15 +1016,6 @@ struct controller controller_list[] =
       { NULL }
     }
   },
-  {
-    "ls011b7dh03", 	20, 	9, 	"u8g2_ll_hvline_horizontal_right_lsb", "u8x8_cad_001", "", COM_4WSPI,		/* cad procedure is not required (no DC for this display) so it could be a dummy procedure here */
-    "", /* is_generate_u8g2_class= */ 1,
-    {
-      { "160x68" },
-      { NULL }
-    }
-  },
-  
   {
     "uc1701", 		13, 	8, 	"u8g2_ll_hvline_vertical_top_lsb", "u8x8_cad_001", "", COM_4WSPI|COM_3WSPI|COM_6800|COM_8080,
     "", /* is_generate_u8g2_class= */ 1,
@@ -1666,7 +1638,6 @@ struct controller controller_list[] =
     "", /* is_generate_u8g2_class= */ 1,
     {
       { "lw12832" },
-      { "yxd12832" },
       { NULL }
     }
   },
@@ -1715,15 +1686,6 @@ struct controller controller_list[] =
       { NULL }
     }
   },
-
-  {
-    "st7302", 		16, 	32, 	"u8g2_ll_hvline_horizontal_right_lsb", "u8x8_cad_011", "", COM_4WSPI|COM_3WSPI|COM_6800|COM_8080,
-    "", /* is_generate_u8g2_class= */ 1,
-    {
-      { "122X250" },
-      { NULL }
-    },
-  },
   
   
   {
@@ -1763,16 +1725,6 @@ struct controller controller_list[] =
       { NULL }
     },
   },
-  
-  {
-    "st7586s", 		30, 	16, 	"u8g2_ll_hvline_horizontal_right_lsb", "u8x8_cad_011", "", COM_4WSPI|COM_3WSPI|COM_6800|COM_8080,
-    "", /* is_generate_u8g2_class= */ 1,
-    {
-      { "md240128" },
-      { NULL }
-    },
-  },
-  
   
   {
     "st7588", 		16, 	8, 	"u8g2_ll_hvline_vertical_top_lsb", "u8x8_cad_001", "", COM_4WSPI|COM_3WSPI|COM_6800|COM_8080,
@@ -2210,7 +2162,6 @@ struct controller controller_list[] =
     "Requires U8G2_16BIT (see u8g2.h)", /* is_generate_u8g2_class= */ 1,
     {
       { "nhd_256x64" },
-      { "zjy_256x64" },
       { NULL }
     }
   },
@@ -2309,14 +2260,6 @@ struct controller controller_list[] =
     "Not tested, might work for RA8835 and SED1335 also", /* is_generate_u8g2_class= */ 1,
     {
       { "240x128" },
-      { NULL }
-    }
-  },
-  {
-    "sed1330", 	30, 	8, 	"u8g2_ll_hvline_horizontal_right_lsb", "u8x8_cad_100", "", COM_6800|COM_8080,
-    "Not tested, might work for RA8835 and SED1335 also", /* is_generate_u8g2_class= */ 1,
-    {
-      { "240x64" },
       { NULL }
     }
   },
