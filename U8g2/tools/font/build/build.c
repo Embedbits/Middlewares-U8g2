@@ -14,7 +14,8 @@ extern char *u8x8_font_names[] ;
 extern const uint8_t *u8g2_font_list[] ;
 extern char *u8g2_font_names[] ;
 
-const char convert_extra_options[] = "-flip";   /* issue 2080: convert seems to flip the tga picture, again do the flip */
+//const char convert_extra_options[] = "-flip";   /* issue 2080: convert seems to flip the tga picture, again do the flip */
+const char convert_extra_options[] = "";   /* 1 Sep 2024: undo flip */
 
 #ifdef BUILD2
 extern void u8g2_SetupBuffer_TGA(u8g2_t *u8g2, const u8g2_cb_t *u8g2_cb);
@@ -257,7 +258,9 @@ struct fontinfo fi[] ={
   { 0,  0, "7_Seg_33x19.bdf",  "7_Seg_33x19", 	0, 0, BM_M, FM_C, MM_N, "", ""},
   { 0,  0, "7_Seg_41x21.bdf",  "7_Seg_41x21", 	0, 0, BM_M, FM_C, MM_N, "", ""},
 
-  { 0,  0, "font_tiny5.bdf", 		"tiny5", 		0, 0, BM_T, FM_C, MM_R|MM_F, "", ""},
+  { 0,  0, "tiny5-Regular.bdf", 		"tiny5", 		0, 0, BM_T, FM_C, MM_R|MM_F|MM_E, "", ""},
+  { 0,  0, "tiny5-Regular.bdf", 		"tiny5", 		0, 0, BM_T, FM_C, MM_C, "32-$ffff", "_all" },
+  
   { 0,  "-r 72 -p 8", "04B_03B_.TTF",	"04b_03b", 0, 0, BM_T, FM_C, MM_R, "", "" },
   { 0,  "-r 72 -p 8", "04B_03__.TTF",	"04b_03", 0, 0, BM_T, FM_C, MM_R, "", "" },
 
