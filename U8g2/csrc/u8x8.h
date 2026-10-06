@@ -935,6 +935,7 @@ uint8_t u8x8_d_st7302_122x250(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *
 uint8_t u8x8_d_st7305_122x250(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr);
 uint8_t u8x8_d_st7305_200x200(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr);
 uint8_t u8x8_d_st7305_168x384(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr);       /* https://github.com/olikraus/u8g2/issues/2661 */
+uint8_t u8x8_d_st7305_300x400(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr);       /* https://github.com/olikraus/u8g2/issues/2661 */
 uint8_t u8x8_d_st7586s_s028hn118a(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr);
 uint8_t u8x8_d_st7586s_jlx384160(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr);
 uint8_t u8x8_d_st7586s_erc240160(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr);
@@ -982,6 +983,7 @@ uint8_t u8x8_d_ssd1322_topwin_240x128(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int
 uint8_t u8x8_d_ssd1322_nhd_256x64(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr);
 uint8_t u8x8_d_ssd1322_zjy_256x64(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr);
 uint8_t u8x8_d_ssd1322_nhd_128x64(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr);
+uint8_t u8x8_d_ssd1362z_256x64_oel1m0033we(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr);
 uint8_t u8x8_d_ssd1362_256x64(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr);
 uint8_t u8x8_d_ssd1362_206x36(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr);
 uint8_t u8x8_d_ssd1363_256x128(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr);

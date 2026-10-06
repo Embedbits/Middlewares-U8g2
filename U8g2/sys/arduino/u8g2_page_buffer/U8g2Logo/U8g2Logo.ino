@@ -274,6 +274,7 @@
 //U8G2_ST7305_122X250_1_4W_HW_SPI u8g2(U8G2_R0, /* cs=*/ 10, /* dc=*/ 9, /* reset=*/ 8);
 //U8G2_ST7305_200X200_1_4W_HW_SPI u8g2(U8G2_R0, /* cs=*/ 10, /* dc=*/ 9, /* reset=*/ 8);
 //U8G2_ST7305_168X384_1_4W_HW_SPI u8g2(U8G2_R0, /* cs=*/ 10, /* dc=*/ 9, /* reset=*/ 8);
+//U8G2_ST7305_300X400_1_4W_HW_SPI u8g2(U8G2_R0, /* cs=*/ 10, /* dc=*/ 9, /* reset=*/ 8);
 //U8G2_ST7586S_JLX384160_1_4W_HW_SPI u8g2(U8G2_R0, /* cs=*/ 10, /* dc=*/ 9, /* reset=*/ 8);             // Uno: Enable U8g2 16 bit mode for this display
 //U8G2_ST7586S_ERC240160_1_4W_HW_SPI u8g2(U8G2_R0, /* cs=*/ 10, /* dc=*/ 9, /* reset=*/ 8);
 //U8G2_ST7586S_YMC240160_1_4W_HW_SPI u8g2(U8G2_R0, /* cs=*/ 10, /* dc=*/ 9, /* reset=*/ 8);
@@ -485,7 +486,12 @@ void drawLogo(void)
     u8g2.drawHLine(3, 36-mdy, 47);
     u8g2.drawVLine(45, 32-mdy, 12);
     u8g2.drawVLine(46, 33-mdy, 12);
+
     
+    //u8g2.setFont(u8g2_font_logisoso58_tr);
+    //u8g2.setFontDirection(0);
+    //u8g2.drawStr(20,250,"300x400");
+
 #endif
 
 }
