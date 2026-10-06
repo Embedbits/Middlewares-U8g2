@@ -229,6 +229,9 @@ cp ../../../sys/arduino/u8x8/ArduboyTest/*.ino ../../../../U8g2_Arduino/examples
 mkdir ../../../../U8g2_Arduino/examples/u8x8/Rotate90
 cp ../../../sys/arduino/u8x8/Rotate90/*.ino ../../../../U8g2_Arduino/examples/u8x8/Rotate90/.
 
+mkdir ../../../../U8g2_Arduino/examples/u8x8/DrawXBM
+cp ../../../sys/arduino/u8x8/DrawXBM/*.ino ../../../../U8g2_Arduino/examples/u8x8/DrawXBM/.
+
 
 # copy other files
 cp ../../../ChangeLog ./../../../../U8g2_Arduino/extras/.
@@ -281,15 +284,19 @@ echo doing LOCAL tag and COMMIT with ${ver}
 git tag ${ver}
 git commit -a -m "${ver}"
 git push
+git push --tags
 echo doing ARDUINO Repo tag and COMMIT with ${ver}
 cd ~/git/U8g2_Arduino
 git tag ${ver}
 git commit -a -m "${ver}"
 git push
+git push --tags
 echo now create a release in gitub for U8glib_Arduino, tag/name = ${ver}
 echo no prefix required, release name can be empty
+
 # Relases in github:
 # Tag: 1.02pre3
 # Release  name: 1.02pre3
+
 
 
