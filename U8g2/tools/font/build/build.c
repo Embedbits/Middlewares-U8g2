@@ -203,7 +203,9 @@ struct groupinfo gi[] = {
   { "Integrated Mapping Ltd", "fntgrpim", "../../../../u8g2.wiki/fntgrpim.md", 		"fntgrpim.pre" }, 		/* 42 */ 
   { "Spleen", "fntgrpspleen", "../../../../u8g2.wiki/fntgrpspleen.md", 		"fntgrpspleen.pre" }, 		/* 43 */ 
   { "BoutiqueBitmap", "fntgrpbb", "../../../../u8g2.wiki/fntgrpbb.md", 		"fntgrpbb.pre" }, 		/* 44 */ 
+  { "Gulim", "fntgrpgulim", "../../../../u8g2.wiki/fntgrpgulim.md", 		"fntgrpgulim.pre" }, 		/* 45 */ 
 
+  
 };
 
 #define BM_T	1	/* Transparent = build mode 0 proportional */
@@ -912,7 +914,7 @@ Greek Extended	1F00–1FFF
   { 0,  0, "unifont.bdf", 		"unifont", 		6, 0, BM_T, FM_C, MM_C, "32-128,$600-$6ff,$750-$77f,$fb50-$fdff,$fe70-$feff", "_urdu" },
   { 0,  0, "unifont.bdf", 		"unifont", 		6, 0, BM_T, FM_C, MM_C, "32-127,$104-$107,$118-$119,$141-$144,$15a-$15b,$179-$17c,$d3,$f3", "_polish" },
   { 0,  0, "unifont.bdf", 		"unifont", 		6, 0, BM_T, FM_C, MM_C, "32-128,$900-$97f,$1cd0-$1cff,$a8e0-$a8ff", "_devanagari" },   /* Hindi, issue 584 */
-  { 0,  0, "unifont.bdf", 		"unifont", 		6, 0, BM_T, FM_C, MM_C, "32-128,$d00-$d7f", "_malayalam" },   /* Malayalam, issue 584 */
+  { 0,  0, "unifont.bdf", 		"unifont", 		6, 0, BM_T, FM_C, MM_C, "32-128,$d00-$d7f", "_malayalam" },   /* Malayalam, issue https://github.com/olikraus/u8g2/issues/1015 and 2656 */
   
   
   { 0,  0, "unifont.bdf", 		"unifont", 		6, 35, BM_T, FM_C, MM_C, "32-128,$600-$6ff,$FB50-$FBB1,$FE70-$FEFF,x32-64,x91-96,x123-191,x247,x697-879,x32-$5ff", "_arabic" },
@@ -1473,6 +1475,16 @@ inconsolata
   { 0,  "-a -r 72 -p 89", "Logisoso.ttf",	"logisoso62",			10, 0, BM_T, FM_C, MM_N, "", "" },
   { 0,  "-a -r 72 -p 110", "Logisoso.ttf",	"logisoso78",			10, 0, BM_T, FM_C, MM_N, "", "" },
   { 0,  "-a -r 72 -p 131", "Logisoso.ttf",	"logisoso92",			10, 0, BM_T, FM_C, MM_N, "", "" },
+  
+  { 0,  "-a -r 72 -p 11", "Gulim.ttf", 		"gulim11", 		        45, 0, BM_T, FM_C, MM_M, "korean1.map", "_korean1" },
+  { 0,  "-a -r 72 -p 11", "Gulim.ttf", 		"gulim11", 		        45, 0, BM_T, FM_C, MM_M, "korean2.map", "_korean2" },
+  { 0,  "-a -r 72 -p 12", "Gulim.ttf", 		"gulim12", 		        45, 0, BM_T, FM_C, MM_M, "korean1.map", "_korean1" },
+  { 0,  "-a -r 72 -p 12", "Gulim.ttf", 		"gulim12", 		        45, 0, BM_T, FM_C, MM_M, "korean2.map", "_korean2" },
+  { 0,  "-a -r 72 -p 14", "Gulim.ttf", 		"gulim14", 		        45, 0, BM_T, FM_C, MM_M, "korean1.map", "_korean1" },
+  { 0,  "-a -r 72 -p 14", "Gulim.ttf", 		"gulim14", 		        45, 0, BM_T, FM_C, MM_M, "korean2.map", "_korean2" },
+  { 0,  "-a -r 72 -p 16", "Gulim.ttf", 		"gulim16", 		        45, 0, BM_T, FM_C, MM_M, "korean1.map", "_korean1" },
+  { 0,  "-a -r 72 -p 16", "Gulim.ttf", 		"gulim16", 		        45, 0, BM_T, FM_C, MM_M, "korean2.map", "_korean2" },
+  
 
   { 0,  "-r 72 -p 8", "PressStart2P.ttf",	"pressstart2p",			12, 0, BM_8, FM_C|FM_8, MM_F|MM_R|MM_U|MM_N, "" , ""},
   { 0,  "-r 72 -p 8", "pcsenior.ttf",		"pcsenior",			12, 0, BM_8, FM_C|FM_8, MM_F|MM_R|MM_U|MM_N, "" , ""},
